@@ -1,0 +1,19 @@
+unknown_answer = raw_input("Input a number range in (1,100)")
+unknown_answer = int(unknown_answer)
+right_answer = 47
+if int(unknown_answer) > int(right_answer):
+	print("It is not a right answer,It may be lower than your : ")
+elif int(unknown_answer) < int(right_answer):
+	print("It is not a right answer,It may be upper than your : ")
+else :
+	print("Congrations! It is a right answer!")
+while int(unknown_answer) != int(right_answer):
+	unknown_answer = raw_input("Input a number range in (1,100) again:")
+	if int(unknown_answer) > int(right_answer):
+		print("It is not a right answer,It may be lower than your ")
+	elif int(unknown_answer) < int(right_answer):
+		print("It is not a right answer,It may be upper than your ")
+	else :
+		print("Congrations! It is a right answer!")
+		
+		
